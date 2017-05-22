@@ -1,0 +1,26 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-transition-group": "^1.1.3",
+    "reactstrap": "^4.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "flow-bin": "^0.46.0",
+    "flow-typed": "^2.1.2",
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "flow": "flow",
+    "flow-typed": "flow-typed install",
+    "eject": "react-scripts eject"
+  }
+}
