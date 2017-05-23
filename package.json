@@ -1,6 +1,7 @@
 {
   "name": "web",
   "version": "0.1.0",
+  "homepage": "http://herding.io",
   "private": true,
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
@@ -13,12 +14,15 @@
     "eslint": "^3.19.0",
     "flow-bin": "^0.46.0",
     "flow-typed": "^2.1.2",
+    "gh-pages": "^1.0.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages --dist build --branch master --no-push",
     "flow": "flow",
     "flow-typed": "flow-typed install",
     "eject": "react-scripts eject"
